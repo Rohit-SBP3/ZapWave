@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="vModel"
+            type="com.example.zapwave.viewmodel.MyViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/primaryBackgroundColor">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:text="@string/messages"
+            android:gravity="center"
+            android:background="@color/primaryColor"/>
+
+        <!-- Chat area and input -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <!-- Chat RecyclerView with padding for space -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_chat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/layout_input"
+                android:clipToPadding="false"
+                android:padding="8dp" />
+
+            <!-- Input field in CardView for elevation and style -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/layout_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:elevation="6dp"
+                app:cardCornerRadius="25dp"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:backgroundTint="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Input Message EditText -->
+                    <EditText
+                        android:id="@+id/edt_chat_message"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:hint="@string/type_here"
+                        android:padding="12dp"
+                        android:background="@null"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:inputType="text"
+                        android:autofillHints="" />
+
+                    <!-- Send Button with rounded corners -->
+                    <Button
+                        android:id="@+id/btn_send"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:padding="12dp"
+                        android:text="@string/send"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/primaryColor"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

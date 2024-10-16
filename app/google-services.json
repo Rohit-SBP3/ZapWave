@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "86111852871",
+    "project_id": "zapwave-59850",
+    "storage_bucket": "zapwave-59850.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:86111852871:android:be1b6cb862691043a2d462",
+        "android_client_info": {
+          "package_name": "com.example.zapwave"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzZgnhsDNtdi-PJOzen4hVPvUOGeuVFXU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

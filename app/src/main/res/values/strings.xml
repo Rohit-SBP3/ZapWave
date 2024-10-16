@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ZapWave</string>
+    <string name="welcome">Welcome to ZapWave</string>
+    <string name="login_to_continue">Login to continue</string>
+    <string name="login_anonymously">Login Anonymously</string>
+    <string name="anonymous_user">Anonymous User</string>
+    <string name="upgrade_account">Upgrade Account</string>
+    <string name="chatgroup_icon">This Image is for ChatGroup Icon</string>
+    <string name="fab_for_adding_groups">fab for adding groups</string>
+    <string name="group_desc">Please enter the chat group name</string>
+    <string name="enter_group_name">Enter group name</string>
+    <string name="create_group">Create Group</string>
+    <string name="fab_to_add_groups">Fab to add groups</string>
+    <string name="messages">Messages</string>
+    <string name="type_here">Type here</string>
+    <string name="send">Send</string>
+</resources>
